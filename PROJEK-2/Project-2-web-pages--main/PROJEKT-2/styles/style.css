@@ -1,3 +1,12 @@
 :root{
-    --background-color:
+    --background-color: rgb(70, 70, 70);
+    --nav-color-1: rgb( 200,200,200);
+    --nav-color-2: rgb(93, 79, 224);
+}
+
+body{
+    background-color: var(--background-color);
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }

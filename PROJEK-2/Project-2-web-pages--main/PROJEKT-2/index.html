@@ -7,6 +7,8 @@
       href="https://necolas.github.io/normalize.css/7.0.0/normalize.css "
     />
     <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/searchbar.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reset.css" />
     <meta charset="UTF-8" />
 
@@ -15,50 +17,31 @@
   </head>
   <body>
     <nav>
-      <div><img src="./assets/random-ahh.svg" alt="random-ahh" /></div>
-      <ul>
-        <div class="inverted-border-radius-top"></div>
-        <li>
-          <a href="">
-            <div class="inverted-border-radius-top">
-              <img
-                class="home"
-                src="./assets/home_FILL0_wght400_GRAD0_opsz24.svg"
-                alt=""
-              />
-            </div>
-          </a>
+      <div><img src="./assets/random-ahh.svg" alt="" /></div>
+      <ul class="nav-list">
+        <li><div></div>
+          <img src="./assets/home_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <div></div>
         </li>
-
-        <li>
-          <a href="">
-            <div><img src="" alt="" /></div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div><img src="" alt="" /></div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div><img src="" alt="" /></div>
-          </a>
-        </li>
+        <li><div class="up"></div><img src="./assets/text.svg" alt="" /><div class="down"></div></li>
+        <li><div class="up"></div><img src="./assets/part.svg" alt="" /><div class="down"></div></li>
+        <li><div class="up"></div><img src="./assets/groups.svg" alt="" /><div class="down"></div></li>
       </ul>
+      <div><img src="./assets/settings.svg" alt="" /></div>
     </nav>
     <main>
       <header class="searchbar">
-        <div>
+        <div class="search">
           <img
             src="./assets/search_FILL0_wght400_GRAD0_opsz24.svg"
             alt="search"
           />
           <input type="text" placeholder="Search" />
         </div>
-        <img src="./assets/bell.svg" alt="bell" />
-        <div>
-          <img src="./assets/3dots.svg" alt="dots" /><img src="" alt="" />
+        <div class="bell">
+          <img src="./assets/bell.svg" alt="bell" />
+          <div><img class="dots" src="./assets/3dots.svg" alt="dots" /><button class="letters">MN</button></div>
+         
         </div>
       </header>
       <section class="section-1">
