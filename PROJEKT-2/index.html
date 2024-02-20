@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.map"
+      charset="utf-8"
+    ></script>
+    <!--styles-->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/7.0.0/normalize.css "
+    />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/searchbar.css" />
+    <link rel="stylesheet" href="./styles/section-1.css" />
+    <link rel="stylesheet" href="./styles/section-2.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+  </head>
+  <body>
+    <nav>
+      <div class="top-down">
+        <img class="nav-img" src="./assets/random-ahh.svg" alt="" />
+      </div>
+      <ul class="nav-list">
+        <li>
+          <div class="up"></div>
+          <img
+            class="nav-img"
+            src="./assets/home_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <div class="down"></div>
+        </li>
+        <li>
+          <div class="up"></div>
+          <img class="nav-img" src="./assets/text.svg" alt="" />
+          <div class="down"></div>
+        </li>
+        <li>
+          <div class="up"></div>
+          <img class="nav-img" src="./assets/part.svg" alt="" />
+          <div class="down"></div>
+        </li>
+        <li>
+          <div class="up"></div>
+          <img class="nav-img" src="./assets/groups.svg" alt="" />
+          <div class="down"></div>
+        </li>
+      </ul>
+      <div class="top-down">
+        <img class="nav-img" src="./assets/settings.svg" alt="" />
+      </div>
+    </nav>
+    <main>
+      <header class="searchbar">
+        <div class="search">
+          <img
+            src="./assets/search_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="search"
+          />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="bell">
+          <img src="./assets/bell.svg" alt="bell" />
+          <div>
+            <img class="dots" src="./assets/3dots.svg" alt="dots" /><button
+              class="letters"
+            >
+              MN
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="section-1">
+        <div class="info">
+          <div class="boxes">
+            <div>
+              <div>
+                <span>+16%</span>
+                <img
+                  class="info-img"
+                  src="./assets/download.svg"
+                  alt="downloads"
+                />
+              </div>
+              <span>downloads</span>
+            </div>
+            <h1>188,611</h1>
+          </div>
+          <div class="boxes">
+            <div>
+              <div>
+                <span>+8%</span>
+                <img class="info-img" src="./assets/mic.svg" alt="mic" />
+              </div>
+              <span>live records</span>
+            </div>
+            <h1>45,740</h1>
+          </div>
+        </div>
+        <div class="big-image">
+          <div>
+            <div>
+              <h1>Episode for June 05, 2024</h1>
+              <span>Published spe 16, 2023 by Jerry</span>
+            </div>
+            <button>Check it</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="performence">
+          <h1>Top Performing Podcasts</h1>
+          <div class="chart">
+            <ul class="numbers">
+              <li><span>200</span></li>
+              <li><span>150</span></li>
+              <li><span>100</span></li>
+              <li><span>50</span></li>
+              <li><span>0</span></li>
+            </ul>
+            <ul class="bars">
+              <li>
+                <div class="bar" data-percentage="100"><span>Stoic</span></div>
+              </li>
+
+              <li>
+                <div class="bar" data-percentage="80">
+                  <span>Weekly Show</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="bar" data-percentage="60">
+                  <span>Stereo Pro</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="bar" data-percentage="40">
+                  <span>Run Podcast</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="bar" data-percentage="20">
+                  <span>Morning Brew</span>
+                </div>
+              </li>
+            </ul>
+            <script type="text/javascript">
+              $(document).ready(function() {
+                $(".bars li .bar").each(function(key, bar) {
+                  var percentage = $(this).data("percentage");
+                  $(this).animate({
+                    height: percentage + "%",
+                  });
+                });
+              });
+            </script>
+          </div>
+        </div>
+        <div class="podcasters">
+          <div class="buttons">
+            <button>Top Podcasters</button><button>Top Episodes</button>
+          </div>
+          <div class="people">
+            <div>
+              <img src="" alt="" class="pfp" />
+              <div>
+                <h4>Earth Tones</h4>
+                <span>Wade Warren</span>
+              </div>
+              <span>2d</span>
+            </div>
+            <div>
+              <img src="" alt="" class="pfp" />
+              <div>
+                <h4>Earth Tones</h4>
+                <span>Wade Warren</span>
+              </div>
+              <span>2d</span>
+            </div>
+            <div>
+              <img src="" alt="" class="pfp" />
+              <div>
+                <h4>Earth Tones</h4>
+                <span>Wade Warren</span>
+              </div>
+              <span>2d</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

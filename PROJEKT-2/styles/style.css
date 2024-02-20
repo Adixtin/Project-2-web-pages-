@@ -1,0 +1,97 @@
+:root{
+    --background-color: rgb(70, 70, 70);
+    --nav-color-1: rgb( 200,200,200);
+    --nav-color-2: rgb(93, 79, 224);
+}
+
+body{
+    background-color: var(--background-color);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+nav{
+    flex: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 15;
+}
+
+header{
+    flex: 1;
+}
+
+.section-1{
+    display: flex;
+    flex: 4;
+}
+
+.section-2{
+    background-color: green;
+    display: flex;
+    flex: 3;
+}
+
+@media screen and (max-width:786px){
+    :root{
+        font-size: 90%;
+    }
+
+    body{
+        background-color: var(--background-color);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    nav > ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    main{
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        flex: 15;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .section-1{
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .section-2{
+        flex-direction: column;
+        display: flex;
+    }
+
+    nav > ul > li:active{
+        background-color: var(--nav-color-2);
+      }
+      
+      nav > ul > li:active > div{
+        background-color: var(--nav-color-1);
+      }
+
+    .top-down{
+      margin:0;
+    }
+}

@@ -1,0 +1,77 @@
+.chart{
+    width: 600px;
+    height: 300px;
+    display: block;
+}
+
+.numbers{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 100px;
+    display: inline;
+    float: left;
+}
+
+.numbers > li{
+    height: 150px;
+    position: relative;
+    bottom: 145px;
+}
+
+.numbers > span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.bars{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    background: #555;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 #555;
+    border-radius: 5px;
+}
+
+.bars > li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+}
+
+.bars > span{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+}
+
+.bar{
+    display: block;
+    background: #dd2525;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 0 1px 0 rgba(154, 34, 20, 0.5);
+    
+}
+
+.bar::before{
+    color: #fff;
+    content: attr(data-percentage)"%";
+    position: relative;
+    bottom: 20px;
+
+}

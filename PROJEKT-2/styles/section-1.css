@@ -1,0 +1,92 @@
+.section-1{
+  display: flex;
+  gap:1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  flex: 0.75;
+}
+
+.boxes {
+  background-color: gainsboro;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.boxes > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.boxes > div > span {
+  color: rgb(153, 152, 152);
+  font-family: sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.boxes > div > div {
+  background-color: rgb(192, 186, 186);
+  display: flex;
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem;
+}
+
+.info-img {
+  width: 1.5rem;
+}
+
+.boxes > h1{
+  text-align: left;
+  font-size: 4rem;
+  position: relative;
+  top: 25%;
+}
+
+.big-image {
+  flex: 3;
+  background-color: rgb(116, 65, 164);
+  border-radius: 1rem;
+  padding: 4rem;
+  background-image:url(../assets/big-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed ;
+}
+
+.big-image > div{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.big-image > div >div > h1{
+  width: 50%;
+  font-size: 5rem;
+}
+
+.big-image > div > div > span{
+  font-size: 1.5rem;
+  color: rgb(51, 46, 46);
+}
+
+.big-image > div > button{
+  width: 8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 90px;
+  padding: 1rem;
+}
