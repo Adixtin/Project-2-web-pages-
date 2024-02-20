@@ -1,6 +1,6 @@
 .section-1{
   display: flex;
-  gap:1rem;
+  gap:2rem;
 }
 
 .info {
@@ -24,13 +24,12 @@
 .boxes > div {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .boxes > div > span {
   color: rgb(153, 152, 152);
   font-family: sans-serif;
-  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
@@ -42,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .4rem;
+  padding: .4rem 1rem;
 }
 
 .info-img {
@@ -50,10 +49,10 @@
 }
 
 .boxes > h1{
-  text-align: left;
-  font-size: 4rem;
+  font-size: 3rem;
   position: relative;
   top: 25%;
+  font-weight: 500;
 }
 
 .big-image {
@@ -70,16 +69,16 @@
 .big-image > div{
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .big-image > div >div > h1{
   width: 50%;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .big-image > div > div > span{
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgb(51, 46, 46);
 }
 

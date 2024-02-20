@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.map"
-      charset="utf-8"
-    ></script>
     <!--styles-->
     <link
       rel="stylesheet"
@@ -113,85 +109,105 @@
         </div>
       </section>
       <section class="section-2">
-        <div class="performence">
+        <div class="Top-podcasts">
           <h1>Top Performing Podcasts</h1>
           <div class="chart">
-            <ul class="numbers">
-              <li><span>200</span></li>
-              <li><span>150</span></li>
-              <li><span>100</span></li>
-              <li><span>50</span></li>
-              <li><span>0</span></li>
+            <ul>
+              <li>200</li>
+              <li>150</li>
+              <li>100</li>
+              <li>50</li>
+              <li>0</li>
             </ul>
-            <ul class="bars">
-              <li>
-                <div class="bar" data-percentage="100"><span>Stoic</span></div>
-              </li>
-
-              <li>
-                <div class="bar" data-percentage="80">
-                  <span>Weekly Show</span>
+            <div class="table">
+              <div class="lines">
+                <hr />
+                <hr />
+                <hr />
+                <hr />
+              </div>
+              <div class="pole" id="first">
+                <div class="active">
+                  <span></span>
+                  <span></span>
                 </div>
-              </li>
-
-              <li>
-                <div class="bar" data-percentage="60">
-                  <span>Stereo Pro</span>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pole" id="second">
+                <div class="active">
+                  <span></span>
+                  <span></span>
                 </div>
-              </li>
-
-              <li>
-                <div class="bar" data-percentage="40">
-                  <span>Run Podcast</span>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pole" id="third">
+                <div class="active">
+                  <span></span>
+                  <span></span>
                 </div>
-              </li>
-
-              <li>
-                <div class="bar" data-percentage="20">
-                  <span>Morning Brew</span>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pole" id="fourth">
+                <div class="active">
+                  <span></span>
+                  <span></span>
                 </div>
-              </li>
-            </ul>
-            <script type="text/javascript">
-              $(document).ready(function() {
-                $(".bars li .bar").each(function(key, bar) {
-                  var percentage = $(this).data("percentage");
-                  $(this).animate({
-                    height: percentage + "%",
-                  });
-                });
-              });
-            </script>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="pole" id="fifth">
+                <div class="active">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            
           </div>
+          <ul class="table-names">
+              <li>Stoic</li>
+              <li>Weekly show</li>
+              <li>Stereo pro</li>
+              <li>Run podcast</li>
+              <li>Morning brew</li>
+            </ul>
         </div>
-        <div class="podcasters">
+        <div class="people">
           <div class="buttons">
-            <button>Top Podcasters</button><button>Top Episodes</button>
+            <button>Top Podcasts</button><button>Top Episodes</button>
           </div>
-          <div class="people">
+          <div class="guys">
             <div>
-              <img src="" alt="" class="pfp" />
+              <img src="./assets/guy-1.jpg" alt="guy1" />
               <div>
-                <h4>Earth Tones</h4>
-                <span>Wade Warren</span>
+                <div class="name">
+                  <span>Earth Tones</span><span>Wade Warren</span>
+                </div>
+                <span>2d</span>
               </div>
-              <span>2d</span>
             </div>
             <div>
-              <img src="" alt="" class="pfp" />
+              <img src="./assets/guy-2.jpg" alt="guy2" />
               <div>
-                <h4>Earth Tones</h4>
-                <span>Wade Warren</span>
+                <div class="name">
+                  <span>Around the World</span><span>Guy Hawkins</span>
+                </div>
+                <span>2d</span>
               </div>
-              <span>2d</span>
             </div>
             <div>
-              <img src="" alt="" class="pfp" />
-              <div>
-                <h4>Earth Tones</h4>
-                <span>Wade Warren</span>
+              <img src="./assets/guy-3.jpg" alt="guy3" />
+              <div class="">
+                <div class="name">
+                  <span>World of Kids</span><span>Adam Thame</span>
+                </div>
+                <span>2d</span>
               </div>
-              <span>2d</span>
             </div>
           </div>
         </div>
