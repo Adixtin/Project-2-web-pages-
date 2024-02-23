@@ -1,6 +1,7 @@
 .section-2 {
   display: flex;
   flex: 4;
+  gap: 2rem;
 }
 
 .Top-podcasts {
@@ -81,7 +82,6 @@
   align-items: end;
   gap: 3rem;
   bottom: 40%;
-  z-index: -1;
 }
 
 .pole {
